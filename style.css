@@ -1,0 +1,82 @@
+body {
+	background-color: #FFCCCC;
+	color: #555555;
+	font: 17px Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+}
+.container {
+	width: 60%;
+	margin: auto;
+	overflow: hidden;
+}
+#main-header {
+	background-color: #662B2B;
+	color: #fff
+}
+#links {
+	background-color: #8B0000;
+
+}
+#links a {
+	color: #808080;
+	padding-right: 17px;
+}
+#links li {
+	display: inline;
+
+}
+
+#message-box {
+	float:left;
+	width: 90%;
+	box-sizing: border-box;
+}
+#project {
+	float:left;
+    width:40%;
+    background-color: #02101a;
+	color: #fff;
+	box-sizing: border-box;
+	margin:20px 0;
+}
+#skill {
+	float: right;
+	width: 40%;
+	background-color:#02101a;
+    color: whitesmoke;
+	text-align: center;
+	padding: 15px;
+	margin-top: 50px;
+}
+#contact{
+	float: left;
+	width: 40%;
+	background-color:#02101a;
+    color: whitesmoke;
+	text-align: center;
+	padding: 15px;
+	margin-top: 50px;
+}
+
+#faviourit {
+	float: right;
+	width: 40%;
+	background-color:#02101a;
+    color: whitesmoke;
+	text-align: center;
+	padding: 15px;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
