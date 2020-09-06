@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendaring</title>
+</head>
+<body style="background-color:powderblue">
+     
+    <h1 style="color:blue">Github Users</h1>
+    <button id="button">GitHub Users</button>
+    <br>
+	<br>
+    <div id="person"></div>
+    
+    <script>
+        document.getElementById('button').addEventListener('click', showData);
+        function showData() {
+            var req = new XMLHttpRequest();
+            req.open('GET', 'https://api.github.com/users', true);
+            req.onload = function(){
+                if(req.status==200){
+                    var people = JSON.parse(req.responseText);
+                    var display ='';
+                
+                    for (var i in people){
+                        display += 
+                        '<div>'+
+                        '<img src='+people[i].avatar_url+'width=200px height=200px>'+
+                            '<ul>' +
+                            '<li>ID: ' +people[i].id+'</li>'+
+                            '<li>Login: ' +people[i].login+'</li>'+                                                     
+                            '</ul>'+
+                            '</div>';
+
+                    }
+                    document.getElementById('person').innerHTML=display;
+                }
+            }
+            req.send();
+        }
+    </script>
+</body>
+</html>
